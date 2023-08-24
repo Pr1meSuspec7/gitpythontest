@@ -20,6 +20,7 @@ def git_push(local_repo, msg, repourl_w_token):
         local_repo.git.add(".")
         local_repo.git.commit(m=msg)
         local_repo.git.push(repourl_w_token)
+        print("Backup committed on " + repo_url)
     except:
         print('Some error occured while pushing the code')    
 
