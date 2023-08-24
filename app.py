@@ -4,7 +4,7 @@ from datetime import datetime
 
 now = datetime.now().isoformat("@", "seconds")
 commit_message = "backup " + str(now)
-repo_token = "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"
+repo_token = "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"
 repo_folder = "."
 repo = Repo(repo_folder)
 repo_url = repo.remotes.origin.url.split('https://')[1]
