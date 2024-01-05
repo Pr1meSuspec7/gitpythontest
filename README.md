@@ -6,5 +6,3 @@
 	+ fatta modifica e rieseguito
 + test C
 	+ modificato except
-+ test D
-	+ rotto il push cambiando il token
