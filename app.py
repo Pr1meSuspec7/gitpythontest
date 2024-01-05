@@ -10,8 +10,9 @@ repo_token = os.getenv("GIT_TOKEN")
 repo_folder = "."
 repo = Repo(repo_folder)
 repo_url = repo.remotes.origin.url.split('https://')[1]
-repo_token_url = "https://" + repo_token + "@" + repo_url
-
+#repo_token_url = "https://" + repo_token + "@" + repo_url
+# test borken push
+repo_token_url = "https://" + "@" + repo_url
 
 def git_push(local_repo, msg, repourl_w_token):
     try:
