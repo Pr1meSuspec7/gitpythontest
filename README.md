@@ -8,3 +8,4 @@
 	+ modificato except
 + test D
 	+ Your branch is ahead of 'origin/main' by 1 commit.
+	+ provato a pushare da cli dopo una modifica
