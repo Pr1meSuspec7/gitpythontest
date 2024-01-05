@@ -11,4 +11,3 @@
 	+ provato a pushare da cli dopo una modifica
 + test E
 	+ provato a pushare tutto a mano senza python
-+ test F
