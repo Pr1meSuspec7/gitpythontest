@@ -1,5 +1,6 @@
 import os
 from git import Repo
+from git.exc import GitCommandError
 from datetime import datetime
 
 now = datetime.now().isoformat("@", "seconds")
@@ -18,7 +19,10 @@ def git_push(local_repo, msg, repourl_w_token):
         local_repo.git.commit(m=msg)
         local_repo.git.push(repourl_w_token)
         print("Committed")
+    except GitCommandError:
+        print("nothing to commit, working tree clean")
     except:
-        print('Some error occured while pushing the code')    
+        print('Some error occured while pushing the code')  
+
 
 git_push(repo, commit_message, repo_token_url)
