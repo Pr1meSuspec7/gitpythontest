@@ -22,8 +22,9 @@ def git_push(local_repo, msg, repourl_w_token):
     except GitCommandError:
         print("nothing to commit, working tree clean")
     except Exception as e:
-        print(e)
-        #print('Some error occured while pushing the code')
+        # decomment to debug
+        #print(e)
+        print('Some error occured while pushing the code')
 
 
 git_push(repo, commit_message, repo_token_url)
